@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@color/blue">
+        <ImageButton android:layout_width="50dp" android:layout_height="50dp" android:id="@+id/back_button" android:src="@drawable/back_button" android:contentDescription="Back Button"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profileButton"
+            android:src="@drawable/baseline_account_circle_24"
+            android:layout_marginLeft="300dp"
+            android:background="@android:color/transparent"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/map" android:name="com.google.android.gms.maps.SupportMapFragment" android:layout_width="match_parent" android:layout_height="450dp" tools:context="com.example.testgooglemap.MapsActivity"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="Scroll" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:layout_width="280dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="50dp" android:text="2400 Virginia Ave. NW - Garage" android:textSize="20dp" android:id="@+id/address1"/>
+                <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="$18.20" android:textSize="20dp" android:textStyle="bold" android:id="@+id/price1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView android:layout_width="40dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@drawable/car"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.3 mi" android:textSize="20dp"/>
+                <ImageView android:layout_width="40dp" android:layout_height="25dp" android:layout_marginLeft="15dp" android:src="@drawable/rating_star"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.6" android:textSize="20dp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="(135)" android:textSize="20dp"/>
+                <ImageButton android:id="@+id/parking1" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="120dp" android:src="@drawable/view"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="Plenty spots available!" android:textColor="@color/green" android:textSize="20dp"/>
+            <Button android:id="@+id/bookButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="20dp" android:backgroundTint="@color/blue" android:text="Book Now" android:textColor="@color/white"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/gray_line"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:layout_width="290dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="45dp" android:text="950 22nd St NW - Lot 769" android:textSize="20dp" android:id="@+id/address2"/>
+                <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="$15.00" android:textSize="20dp" android:textStyle="bold" android:id="@+id/price2"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView android:layout_width="40dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@drawable/car"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.4 mi" android:textSize="20dp"/>
+                <ImageView android:layout_width="40dp" android:layout_height="25dp" android:layout_marginLeft="15dp" android:src="@drawable/rating_star"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.3" android:textSize="20dp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="(175)" android:textSize="20dp"/>
+                <ImageButton android:id="@+id/parking2" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="120dp" android:contentDescription="View Button" android:src="@drawable/view"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="Plenty spots available!" android:textColor="@color/green" android:textSize="20dp"/>
+            <Button android:id="@+id/bookButton2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="20dp" android:backgroundTint="@color/blue" android:text="Book Now" android:textColor="@color/white"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/gray_line"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:layout_width="280dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="50dp" android:text="950 24th St. NW - Garage" android:textSize="20dp" android:id="@+id/address3"/>
+                <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="$20.54" android:textSize="20dp" android:textStyle="bold" android:id="@+id/price3"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView android:layout_width="40dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@drawable/car"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.5 mi" android:textSize="20dp"/>
+                <ImageView android:layout_width="40dp" android:layout_height="25dp" android:layout_marginLeft="15dp" android:src="@drawable/rating_star"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.6" android:textSize="20dp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="(1,457)" android:textSize="20dp"/>
+                <ImageButton android:id="@+id/parking3" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="105dp" android:contentDescription="Parking View" android:src="@drawable/view"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="A few spots available!" android:textColor="@color/orange" android:textSize="20dp"/>
+            <Button android:id="@+id/bookButton3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="20dp" android:backgroundTint="@color/blue" android:text="Book Now" android:textColor="@color/white"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/gray_line"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:layout_width="280dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="50dp" android:text="1150 22nd St. NW - Garage" android:textSize="20dp" android:id="@+id/address4"/>
+                <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="$25.00" android:textSize="20dp" android:textStyle="bold" android:id="@+id/price4"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView android:layout_width="40dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@drawable/car"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.6 mi" android:textSize="20dp"/>
+                <ImageView android:layout_width="40dp" android:layout_height="25dp" android:layout_marginLeft="15dp" android:src="@drawable/rating_star"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.6" android:textSize="20dp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="(226)" android:textSize="20dp"/>
+                <ImageButton android:id="@+id/parking4" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="120dp" android:src="@drawable/view"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="Only 2 spots left!" android:textColor="@color/red" android:textSize="20dp"/>
+            <Button android:id="@+id/bookButton4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="20dp" android:backgroundTint="@color/blue" android:text="Book Now" android:textColor="@color/white"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/gray_line"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

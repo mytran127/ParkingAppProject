@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "663959101738",
+    "project_id": "parkfinder2",
+    "storage_bucket": "parkfinder2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663959101738:android:c32e0096d3ccd132de7e53",
+        "android_client_info": {
+          "package_name": "com.example.parkfinder2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM35wGgXDIwsTmtSrTcOM0RcVOVGVuYoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

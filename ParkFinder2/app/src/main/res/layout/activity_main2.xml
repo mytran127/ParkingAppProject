@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_name"
+        android:id="@+id/toplogo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:text="Start Date:"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:focusable="false"
+        android:hint="Date"
+        android:id="@+id/text_start_date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:text="Start Time:"
+        android:textSize="20dp"/>
+    <EditText android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:id="@+id/text_start_time" android:focusable="false" android:hint="Start at"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginLeft="20dp" android:layout_marginBottom="10dp" android:textStyle="bold" android:text="End Date:" android:textSize="20dp"/>
+    <EditText android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:focusable="false" android:hint="Date" android:id="@+id/text_end_date"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginLeft="20dp" android:textStyle="bold" android:text="End Time:" android:textSize="20dp"/>
+    <EditText android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:id="@+id/text_end_time" android:focusable="false" android:inputType="datetime" android:hint="End at"/>
+    <Button android:layout_width="200dp" android:layout_height="60dp" android:id="@+id/parking" android:layout_marginTop="100dp" android:backgroundTint="@color/blue" android:textColor="@color/white" android:layout_gravity="center" android:text="Find Parking"/>
+</LinearLayout>
